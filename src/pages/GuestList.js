@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import './guestList.scss';
-import { Success } from '../../components/Success';
-import { Users } from '../../components/Users/Users';
+import { Success } from '../components/Success';
+import { Users } from '../components/Users/Users';
 
 // Тут список пользователей: https://reqres.in/api/users
 

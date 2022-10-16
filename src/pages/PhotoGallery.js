@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Collection } from '../../components/Collection';
-import './photoGallery.scss';
+import { Collection } from '../components/Collection';
 
 
 
@@ -11,7 +10,7 @@ function PhotoGallery() {
     const [isLoading, setIsLoadind] = useState(true);
     const [searchValue, setSearchValue] = useState('');
     const [categoryId, setCategoryId] = useState(0);
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(1);
 
 
     const cats = [
@@ -20,7 +19,7 @@ function PhotoGallery() {
         {"name": "Горы"},
         {"name": "Архитектура"},
         {"name": "Города"}
-    ]
+    ];
 
 
     useEffect(() => {
@@ -36,7 +35,7 @@ function PhotoGallery() {
             alert('Ошибка при получении данных :(')
         })
         .finally(() => setIsLoadind(false))
-    }, [categoryId, page])
+    }, [categoryId, page]);
 
 
     return (

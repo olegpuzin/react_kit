@@ -1,6 +1,4 @@
 import React from 'react';
-import BtnHome from '../../components/BtnHome';
-import "./count.scss";
 
 function Count() {
     const [count, setCount] = React.useState(0);
@@ -11,7 +9,6 @@ function Count() {
 
     return (
         <div className="count">
-            <BtnHome/>
             <div>
                 <h2>Счетчик:</h2>
                 <h1>{count}</h1>

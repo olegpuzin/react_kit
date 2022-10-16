@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ConvertorBlock } from '../../components/ConvertorBlock';
-import './currencyConvertor.scss';
+import { ConvertorBlock } from '../components/ConvertorBlock';
 
 function CurrencyConvertor() {
 
