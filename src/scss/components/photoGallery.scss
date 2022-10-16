@@ -14,9 +14,10 @@ body {
 }
 
 .gallery {
-    padding: 50px;
+    padding: 20px;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -118,6 +119,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 40px 0;
 }
 
 .search-input {
